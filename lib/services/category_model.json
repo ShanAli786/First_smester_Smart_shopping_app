@@ -1,0 +1,37 @@
+{"categories":[
+        {
+            "name": "Women Clothes & Feshion",
+            "subcetogory": [
+                "T-shirts",
+                "suits",
+                "jeans",
+                "jackets",
+                "trousers"
+                
+
+            ]
+    },
+    {
+        "name": "Men Clothes & Feshion",
+        "subcetogory": [
+            "T-shirts",
+            "suits",
+            "jeans",
+            "jackets",
+            "trousers"
+        ]
+    },
+
+    {
+        "name": "Men Clothes & Feshion",
+        "subcetogory": [
+            "T-shirts",
+            "suits",
+            "jeans",
+            "jackets",
+            "trousers"
+        ]
+    }
+
+]
+}

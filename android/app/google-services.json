@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "438398352191",
+    "project_id": "smart-shopping-app-75203",
+    "storage_bucket": "smart-shopping-app-75203.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438398352191:android:8fcdcaafbbd509cb48f18a",
+        "android_client_info": {
+          "package_name": "com.example.emart_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438398352191-3ovkiasbeo49hlv61mq2tf481m8800hr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1S1Def7cGKEwp8kD6_G81_twpgf54sgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438398352191-3ovkiasbeo49hlv61mq2tf481m8800hr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
