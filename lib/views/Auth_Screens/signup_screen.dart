@@ -1,4 +1,3 @@
-import 'package:emart_app/HomeSCreen/home.dart';
 import 'package:emart_app/consts/consts.dart';
 import 'package:emart_app/controllers/auth_controller.dart';
 import 'package:emart_app/views/Auth_Screens/login_screen.dart';

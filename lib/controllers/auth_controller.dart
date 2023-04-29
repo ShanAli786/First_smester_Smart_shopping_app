@@ -48,6 +48,8 @@
 // }
 //import 'package:emart_seller/const/const.dart';
 
+// ignore_for_file: unused_catch_clause
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';

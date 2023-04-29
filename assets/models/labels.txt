@@ -1,0 +1,13 @@
+0 mens_tshirts
+1 mens_jeans
+2 mens_dress_pants
+3 mens_casual_shirts
+4 mens_dress_shirts
+5 women_jeans
+6 women_sleeveless_shirts
+7 women_casual_shirts
+8 women_dress_pants
+9 women_dress_shirts
+10 women_sarhi
+11 women_suits
+12 women_tshirts

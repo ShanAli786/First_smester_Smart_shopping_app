@@ -1,20 +1,26 @@
-// ignore_for_file: avoid_unnecessary_containers, unnecessary_string_escapes, duplicate_ignore, prefer_const_constructors_in_immutables, library_private_types_in_public_api
+// ignore_for_file: avoid_unnecessary_containers, unnecessary_string_escapes, duplicate_ignore, prefer_const_constructors_in_immutables, library_private_types_in_public_api, must_be_immutable, use_build_context_synchronously, depend_on_referenced_packages
 
 import 'package:emart_app/HomeSCreen/components/featured_button.dart';
 import 'package:emart_app/HomeSCreen/speech_to_text.dart';
 import 'package:emart_app/consts/consts.dart';
 import 'package:emart_app/widgets_common/home_buttons.dart';
 import 'package:flutter/material.dart';
-
+import 'package:camera/camera.dart';
 import '../consts/list.dart';
+import '../visualsearch/main/main_2.dart';
 //import 'package:flutter/src/widgets/framework.dart';
 //import 'package:flutter/src/widgets/placeholder.dart';
 //import 'package:your_app/services/speech_recognition_service.dart';
 
 //import '../services/Speech_RecognitionService.dart';
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  final cameras = await availableCameras();
+  runApp(HomeScreen(cameras: cameras));
+}
 class HomeScreen extends StatefulWidget {
-  HomeScreen({Key? key}) : super(key: key);
-
+  HomeScreen({Key? key, required List<CameraDescription> cameras}) : super(key: key);
+  late List<CameraDescription> cameras;
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -44,7 +50,14 @@ class _HomeScreenState extends State<HomeScreen> {
 
      } ),
    
-           IconButton(icon: const Icon(Icons.camera_alt_outlined, color: Color.fromARGB(255, 236, 233, 233),), onPressed: () {}),
+           IconButton(icon: const Icon(Icons.camera_alt_outlined, color: Color.fromARGB(255, 236, 233, 233),), onPressed: () async {
+                  final cameras = await availableCameras();
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              CameraAppSecond(cameras: cameras)));
+                }), 
     
          ],
       ),
