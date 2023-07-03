@@ -18,6 +18,7 @@ class CategoryDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var controller = Get.find<ProductController>();
     // ignore: avoid_unnecessary_containers
     return Container(
       child: Scaffold(
@@ -61,7 +62,7 @@ class CategoryDetails extends StatelessWidget {
                 child: Row(
                   children: List.generate(
                       6,
-                      (index) => "Baby Clothes"
+                      (index) =>"${controller.subcat[index]}"
                           .text
                           .fontFamily(bold)
                           .color(darkFontGrey)

@@ -66,7 +66,7 @@ class ProfileScreen extends StatelessWidget {
                           padding: const EdgeInsets.all(8.0),
                           child: Row(
                             children: [
-                              data ['imageUrl'] == ''?
+                              data['imageUrl'] == ''?
                               Image.asset(
                                 imgProfile2,
                                 width: 120,
