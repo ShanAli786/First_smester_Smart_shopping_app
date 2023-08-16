@@ -18,8 +18,9 @@ class CategoryDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var controller = Get.find<ProductController>();
+    //var controller = Get.find<ProductController>();
     // ignore: avoid_unnecessary_containers
+    var controller;
     return Container(
       child: Scaffold(
         appBar: AppBar(
